@@ -1,0 +1,352 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html,body {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+  
+* {
+  margin: 0;
+  padding: 0;
+}
+    
+.img {
+  max-width: 100%;
+  height: auto;
+}
+    
+.top_banner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 35px;
+  padding: 0px; 
+  text-align: center;
+  background-color: #2E2E2E;
+}
+
+.quotes1, .quotes2 {
+  top: 20;
+  font-size: 12px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #BDBDBD;
+  text-align: center;
+  transform: translateY(35%);
+  -webkit-transform: translateY(35%);
+  -moz-transform: translateY(35%);
+  -ms-transform: translateY(35%);
+  -o-transform: translateY(35%);
+}
+    
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Cabin', sans-serif;
+  color: black;
+  text-align: center;
+  position: relative;
+  top: 55px;
+}
+
+.hrstlye1 {
+  position: relative;
+  border:0;
+  height:2px;
+  top:80px;
+  transform:translate(0%,100%);
+  background-color:black;
+  -webkit-transform:translate(0%,100%);
+  -moz-transform:translate(0%,100%);
+  -ms-transform:translate(0%,100%);
+  -o-transform:translate(0%,100%);
+}
+
+.mobile_btn {
+  position: absolute;
+  top:75px;
+  left: 15px;
+}    
+
+input[id="hamburger"] {
+  display: none;
+  }
+
+input[id="hamburger"] + label {
+  display: block;
+  width: 40px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  top: 4px;
+}
+
+input[id="hamburger"] + label span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  border-radius: 30px;
+  background: #000;
+  transition: all 0.35s;
+}
+
+input[id="hamburger"] + label span:nth-child(1) {
+  top: 0;
+}
+
+input[id="hamburger"] + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input[id="hamburger"] + label span:nth-child(3) {
+  bottom: 0;
+}
+
+input[id="hamburger"]:checked + label {
+  z-index: 99;
+}
+
+input[id="hamburger"]:checked + label span {
+  background: black;
+  position: absolute;
+}
+  
+input[id="hamburger"]:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+input[id="hamburger"]:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+
+input[id="hamburger"]:checked + label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+div[class="sidebar"] {
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 98;
+  overflow: hidden;
+  transition: all 0.35s;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  -o-transition: all 0.35s;
+}
+  
+input[id="hamburger"]:checked + label + div {
+  left: 0;
+}
+  
+.nav_mobile {
+  position: absolute;
+  top:119px;
+  width: 100%;
+}
+
+.sidebar .nav_mobile li {
+  color:black;
+  position:relative;
+  float:left; 
+  width:100%; 
+  list-style-type:none; 
+  font-size:12px;
+  border-bottom:1px solid #ccc;
+  font-family: 'Noto Sans KR';
+  font-weight:bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+  
+.sidebar a {
+  padding: 0;
+  text-decoration: none;
+  display: block;
+}
+  
+.sidebar li a{
+  display:block;
+  font-weight:bold;
+  line-height:40px;
+  margin:0px;
+  padding:0;
+  text-align:center;
+  text-decoration:none;
+  transition: all 0.4s;
+}
+  
+.sidebar li a:hover, .sidebar ul li:hover a {
+  text-decoration: none;
+  color: #eee;
+  padding: 0;
+  margin: 0;
+  border: 0px;
+}
+  
+input[type=text-normal] {
+  background-image: url('/image/img\ \(9\).png');
+  background-size: 20px 20px;
+  width: 78%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 8px 20px 12px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+.banner_menu {position: relative; margin-left: auto; margin-right: auto; left: 100px; display: flex; width: 1000px;}
+.banner_menu a {color:black; display: block; width: var(--banner_menu-width);}
+.banner_menu ul {list-style: none;}
+.banner_menu li {float: left; margin: 55px 50px 0px; }
+.banner_menu li a {transition: all 0.4s; color:black; font-size: 12px; font-weight: 600;  transition: all 0.4s;}
+.banner_menu li a:hover {color:#e0e0e0; transition: all 0.4s;}
+
+.rfooter {
+    position: relative;
+    left: 0;
+    bottom: 10;
+    width: 100%;
+    padding: 0px; 
+    text-align: center;
+    background-color: #f2f2f2;
+    color:black;
+}  
+
+.rfooter_text {
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+  
+.rfooter_text-head {
+    font-family:'Noto Sans KR';
+    font-size: 16px;
+    margin-bottom:15px;
+    margin: 20px 40px 25px;
+}
+  
+.rfooter_list li {
+    font-family:'Noto Sans KR';
+    list-style:none;
+    margin-bottom:20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.rfooter_text1 {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Noto Sans KR';
+}
+
+.mail_icon {
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.submit_btn {
+  background-image: url( "/image/img(9)" );
+  color: black;
+  width: 60px;
+  height: 35px;
+  transform: translate(0%,3%);
+  -webkit-transform: translate(0%,3%);
+  -moz-transform: translate(0%,3%);
+  -ms-transform: translate(0%,3%);
+  -o-transform: translate(0%,3%);
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .mobile_btn {
+    display: none;
+    }
+    
+    #footer_mobile {
+    display: none;
+    }
+  
+    h1 {
+    font-size: 50px;
+    }
+
+  
+    .hrstlye2 {
+    display: none;
+    }
+  
+    .menubar_02 {
+    display: none;
+    }
+
+    .nav {
+    margin-bottom: 100px;
+    }
+  
+}
+  
+@media screen and (max-width: 1023px) {
+  
+  .banner_menu {
+    display: none;
+    }
+  
+  h1 {
+    font-size: 45px;
+    }
+    
+  .footer_pc {
+    display: none;
+    }
+  
+  .hrstlye1 {
+    display: none;
+    }
+
+  .header {
+    margin-bottom: 100px;
+  }
+  
+}
+    
+@media screen and (max-width: 450px) {
+    
+  .login_mobile {
+    display: none;
+    }
+    
+  .login_banner {
+    display: flex;
+    }
+}
